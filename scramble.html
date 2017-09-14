@@ -15,6 +15,20 @@
         function getRandomInt(max) {
             return Math.floor(Math.random() * max); //The maximum is exclusive and the minimum is inclusive
         }
+
+        function scrambleWord(str){
+            var arrayWord = str.split("");
+
+             var initialIndex = arrayWord.length;
+
+            while (initialIndex > 0, initialIndex--) {
+                var randomIndex = Math.floor(Math.random() * initialIndex);
+                arrayWord[initialIndex] = arrayWord[randomIndex];
+
+            }
+                //take initialindex and swap with random index
+                //initial random -= 1
+        }
         while (playing) {
 
             // Grab a random word from the WORDS array.
